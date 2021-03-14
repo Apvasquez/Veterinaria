@@ -1,0 +1,29 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+/* navigation
+ - show navigation always on the large screen devices with (min-width:1024)
+*/
+@media (min-width: 1024px) {
+  .top-navbar {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
+  .form-label {
+    @apply block text-gray-700 text-xs font-bold uppercase;
+
+  }
+  .form-control {
+    @apply block w-full bg-gray-200 px-4 py-3 rounded text-gray-700  border border-gray-200;
+
+  }
+  .form-control:focus{
+    @apply bg-white outline-none  border-gray-500;
+  }
+
+}
+
+/*# sourceMappingURL=style.css.map */
