@@ -17,7 +17,7 @@
                                 src="../uploads/{{ $a->imagenesaccesorios()->first()->nombre }}">
                         </a>
                         <div class="mt-4  w-60">
-                            <h3 class="text-gray-500 text-base tracking-widest  title-font mb-1">Accesorios </h3>
+                            <h3 class="text-gray-500 text-xl tracking-widest  title-font mb-1">Accesorios </h3>
                             <h2 class="text-gray-900  font-bold text-lg ">{{ $a->nombre }}</h2>
                             <p class="mt-1 ">${{ $a->precio }}</p>
 
