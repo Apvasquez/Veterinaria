@@ -22,8 +22,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Campus::factory(10)->create();
-        \App\Models\Bar::factory(10)->create();
+       
+        
+        $this->call(RoleSeeder::class);
 
 
     }

@@ -38,5 +38,8 @@ module.exports = {
             '100': '1',
         }
     },
+    plugins: [
+        require('tailwindcss-textshadow')
+      ],
 
 };

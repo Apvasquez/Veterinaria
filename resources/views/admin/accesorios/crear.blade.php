@@ -17,6 +17,7 @@
     @livewire('navigation-dropdown')
 </div>
 
+
 <div class="panel-body">
     
  
@@ -29,7 +30,7 @@
             <input type="hidden" name="_method" value="PUT">
             <input type="hidden" name="_token" value="{{ csrf_token() }}"> 
            
-            <h1 class="text-4xl font-semiboldbold font-semibold tracking-wide uppercase text-green-600 text-center">Crear Accesorio </h1>
+            <h1 class="text-4xl mt-16 font-semibold tracking-wide tex uppercase  text-green-600 text-center text-shadow-xl">Crear Accesorio </h1>
             @include('admin.accesorios.frm.prt')
  
         </form>

@@ -222,5 +222,13 @@ class AccesoriosController extends Controller
  
         return view('admin/accesorios.detallesproducto', compact('accesorios', 'imagenes'));
     }
+    public function pay($id){
+        $accesorios = Accesorios::where('id','=', $id)->firstOrFail();
+ 
+        // Seleccionamos las imágenes por su 'id' 
+        $imagenes = Accesorios::find($id)->imagenesaccesorios;
+        
+        return view('admin/accesorios.pay', compact('accesorios','imagenes'));
+    }
  //
 }

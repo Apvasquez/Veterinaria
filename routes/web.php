@@ -15,7 +15,7 @@ use Spatie\Permission\Models\Role;
 use Faker\Factory as Faker;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-
+use Illuminate\Routing\Route as RoutingRoute;
 
 /*
 |--------------------------------------------------------------------------
@@ -78,3 +78,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('admin/accesorios/eliminari
  
 /* Vista para los detalles de un registro */
 Route::middleware(['auth:sanctum', 'verified'])->get('admin/accesorios/detallesproducto/{id}', [AccesoriosController::class ,'detallesproducto']);
+
+Route::get('admin/accesorios/{i}/pay', [AccesoriosController::class ,'pay'])->middleware('auth')->name('accesorio.pay');

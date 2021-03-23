@@ -27,13 +27,11 @@
 
 <body class="">
     <div class="min-h-screen bg-gray-100">
-        @livewire('navigation-dropdown')
+        <div class="mb-0">@livewire('navigation-dropdown')</div>
+        <br><br><br><br>
+        
         <!-- Page Heading -->
-        <header class="bg-white   mt-5 border border-gray-300 rounded-3xl  mx-8 ">
-            <div class="max-w-7xl mx-auto py-4  sm:px-6 lg:px-8">
-                {{ $header }}
-            </div>
-        </header>
+        
         <!-- Page Content -->
         <main>
             {{ $slot }}

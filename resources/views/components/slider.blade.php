@@ -68,7 +68,7 @@
 </head>
 
 <body>
-    <div class="sliderAx h-auto">
+    <div class="-mt-24 sliderAx h-auto">
         <div id="slider-1" class="container-fluid mx-auto">
             <div class="bg-cover bg-fixed bg-center h-screen text-white py-52 px-10  object-fill" style="background-image: url(img/licor/pug_1.jpg)">
                 <div class="md:w-1/2">

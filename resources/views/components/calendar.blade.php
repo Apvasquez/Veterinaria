@@ -1,5 +1,5 @@
 <!-- This is an example component -->
-<div>
+
 
 	<link rel="dns-prefetch" href="//unpkg.com" />
 	<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
@@ -12,7 +12,7 @@
 		}
 	</style>
 
-<div class="antialiased sans-serif bg-transparent h-screen">
+<div class="antialiased sans-serif bg-transparent h-screen w-full">
 	<div x-data="app()" x-init="[initDate(), getNoOfDays()]" x-cloak>
 		<div class="container mx-10 px-4 py-2 md:py-24" style="width: 700px;height: 200px;">
 			  
@@ -52,7 +52,7 @@
 					</div>
 				</div>	
 
-				<div class="-mx-1 -mb-1">
+				<div class="mx-1 mb-1">
 					<div class="flex flex-wrap" style="margin-bottom: -120px;">
 						<template x-for="(day, index) in DAYS" :key="index">	
 							<div style="width: 14.26% ;height: 20px;" class="px-2 py-2">
