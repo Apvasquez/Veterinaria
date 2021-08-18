@@ -29,7 +29,7 @@
             }
 
 
-            }},9500);
+            }},4500);
 
     }
 
@@ -48,10 +48,10 @@
         }
 
         function sliderButton2(){
-        $("#slider-1").fadeOut(400);
-        $("#slider-2").delay(400).fadeIn(400);
-        $("#sButton1").removeClass("bg-purple-800");
-        $("#sButton2").addClass("bg-purple-800");
+        $("#slider-1").fadeOut(100);
+        $("#slider-2").delay(10).fadeIn(10);
+        $("#sButton1").removeClass("bg-green-800");
+        $("#sButton2").addClass("bg-green-800");
         reinitLoop(4000);
         cont=1
 
@@ -67,39 +67,41 @@
     </script>
 </head>
 
+
 <body>
-    <div class="-mt-24 sliderAx h-auto">
-        <div id="slider-1" class="container-fluid mx-auto">
-            <div class="bg-cover bg-fixed bg-center h-screen text-white py-52 px-10  object-fill" style="background-image: url(img/licor/pug_1.jpg)">
-                <div class="md:w-1/2">
-                    <p class="font-bold text-sm uppercase">Pet Shop </p>
+    <div class=" mx-auto  rounded-lg mt-12  w-11/12">
+        <div id="slider-1" class=" container-fluid  h-4/6 mx-auto">
+            <div class=" bg-cover bg-fixed text-white  rounded-xl bg-red py-52 px-10   h-5/6 " style="background-image: url(img/licor/pug_1.jpg);  ">
+                <div class="">
+                    <p class="font-bold  text-sm uppercase">Pet Shop A.V </p>
                     <p class="text-3xl font-bold">Mejores Productos para tu mascota.</p>
                     <p class="text-2xl mb-10 leading-none"></p>
                     <a href="#"
-                        class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Ingresar</a>
+                    class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs  rounded hover:bg-purple-600 hover:text-green-200">Ingresar</a>
                 </div>
             </div> <!-- container -->
 
         </div>
 
-        <div id="slider-2" class="container-fluid mx-auto">
-            <div class="bg-cover bg-fixed bg-center  h-screen text-white py-52 px-10  object-fill"
-                style="background-image: url(img/licor/pug_2.jpg)">
-                <div class="md:w-1/2">
-                    <p class="font-bold text-sm uppercase">Productos</p>
+        <div id="slider-2" class=" container-fluid  h-4/6 mx-auto">
+            <div class=" bg-cover bg-fixed rounded-lg  text-white py-52 px-10  h-5/6"
+                style="background-image: url(img/licor/pug_2.jpg);
+                ">
+                <div class="">
+                    <p class="font-bold pt-5 text-sm uppercase">Productos</p>
                     <p class="text-3xl font-bold">De Calidad a disposición del público. </p>
                     <p class="text-2xl mb-10 leading-none"></p>
                     <a href="#"
-                        class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Productos</a>
+                        class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-purple-600 hover:text-green-200">Productos</a>
                 </div>
 
             </div> <!-- container -->
 
         </div>
     </div>
-    <div class="flex justify-between w-12 mx-auto pb-2">
-        <button id="sButton1" onclick="sliderButton1()" class="bg-purple-400 rounded-full w-4 pb-2 "></button>
-        <button id="sButton2" onclick="sliderButton2() " class="bg-purple-400 rounded-full w-4 p-2"></button>
+    <div class="flex justify-between my-6 w-12 mx-auto pb-2">
+        <button id="sButton1" onclick="sliderButton1()" class="bg-green-400 rounded-full w-4 pb-2 "></button>
+        <button id="sButton2" onclick="sliderButton2() " class="bg-green-400 rounded-full w-4 p-2"></button>
     </div>
 
 </body>

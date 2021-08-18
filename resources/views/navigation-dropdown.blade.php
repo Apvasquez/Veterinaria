@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="fixed bg-gray-900 opacity-90 mt-1 border-purple-800 rounded-xl w-11/12 lg:ml-15  sm:ml-8  ml-4" style="box-shadow: #9b78db 5px 5px 10px;">
+<nav x-data="{ open: false }" class="bg-gray-900 fixed border rounded-xl w-11/12 lg:ml-12  sm:ml-8  ml-4" style="box-shadow: #9b78db 5px 5px 10px;">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl  px-4 md:px-6 lg:px-8 ">
         <div class="flex justify-between h-16">
@@ -119,8 +119,14 @@
                     </x-slot>
                 </x-jet-dropdown> 
                 @else
-                <a href="{{ route('login') }}" class="text-sm  underline">Login</a>
-                <a href="{{ route('register') }}" class="ml-4 text-sm underline">Register</a>
+                <div class="border-l-2 border-green-300 shadow "style="text-shadow: rgb(250,100,150) 3px 6px 5px; ">
+                    <div class="m-3 text-green-200 ">
+                        <a href="{{ route('login') }}" class="text-sm hover:text-purple-500 ">Entrar</a>
+                        <a href="{{ route('register') }}" class="ml-4 hover:text-purple-500 text-sm ">Registrar</a>
+                    </div>
+                   
+                </div>
+               
                
                 @endauth
                 

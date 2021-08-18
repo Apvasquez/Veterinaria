@@ -25,10 +25,12 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.js" defer></script>
 </head>
 
-<body class="">
-    <div class="min-h-screen bg-gray-100">
-        <div class="mb-0">@livewire('navigation-dropdown')</div>
-        <br><br><br><br>
+<body class="" style="background-image: url(img/licor/fondo.jpg)" >
+    <div class="">
+        <div class="p-2"  >@livewire('navigation-dropdown')</div>
+
+
+        <br>
         
         <!-- Page Heading -->
         

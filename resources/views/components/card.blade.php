@@ -1,4 +1,4 @@
-<div class="container bg-gray-200 mx-auto">
+<div class="container bg-gray-200 m-2 mx-auto">
   <h1 class="text-3xl font-bold text-gray-900 pt-4 uppercase text-center">productos</h1>
   <div class="p-10 flex flex-wrap items-center justify-center">
 
