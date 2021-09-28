@@ -5,6 +5,7 @@ use App\Http\Livewire\CampusComponent;
 use App\Models\Campus;
 use App\Http\Livewire\BarsComponent;
 use App\Http\Livewire\ControlTotal;
+use App\Http\Livewire\Permissions;
 use App\Http\Livewire\Alex;
 use App\Http\Controllers\AccesoriosController;
 use App\Models\Bar;
@@ -56,6 +57,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/campuses', CampusComponen
 Route::middleware(['auth:sanctum', 'verified'])->get('/bars', BarsComponent::class)->name('bars');
 Route::middleware(['auth:sanctum', 'verified'])->get('/alex', Alex::class)->name('alex');
 Route::middleware(['auth:sanctum', 'verified'])->get('/controls', ControlTotal::class)->name('controls');
+Route::middleware(['auth:sanctum', 'verified'])->get('/permissions', Permissions::class)->name('permissions');
+
 // Rutas CRUD
  
 /* Crear */

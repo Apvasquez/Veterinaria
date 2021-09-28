@@ -5,16 +5,13 @@
             {{ __('Detalles del Producto') }}
         </h2>
     </x-slot>
+    <div class="panel-title my-8 w-full">
+        <h1 class="text-4xl font-semiboldbold font-semibold tracking-wide uppercase text-green-600 text-center">
+            {{ $accesorios->nombre }}</h1>
+    </div>
 
-    <div class="container mx-auto border mb-12  border-green-200  rounded-xl mt-5 shadow-xl pb-13">
-        <div class=" w-full text-center">
-
-            <div class="panel-title w-full">
-                <h1 class="text-4xl font-semiboldbold font-semibold tracking-wide uppercase text-green-600 text-center">
-                    {{ $accesorios->nombre }}</h1>
-            </div>
-
-        </div>
+    <div class="mx-4 border mb-12  border-green-200  rounded-xl mt-2 shadow-xl pb-13">
+        
         <div class="text-xl mx-2 sm:mt-2 md:mt-4 font-mono  p-4 ">
 
             <div class="flex mx-auto p-4 ">
@@ -55,7 +52,8 @@
 
                 <br><br>
 
-                <a href="{{ route('admin/accesorios') }}" class="p-8 bg-green-600 py-3 px-6 text-white font-bold uppercase text-base rounded hover:bg-green-800">Volver</a>
+                <a href="{{ route('admin/accesorios') }}"
+                    class="p-8 bg-green-600 py-3 px-6 text-white font-bold uppercase text-base rounded hover:bg-green-800">Volver</a>
 
             </div>
 
@@ -77,5 +75,4 @@
         else
             return false;
     }
-
 </script>

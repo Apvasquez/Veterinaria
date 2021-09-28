@@ -1,4 +1,4 @@
-<div class="container mx-auto border mb-12  border-green-200  rounded-xl mt-5 shadow-xl pb-13">
+<div class=" mt-20 mx-4 border mb-12  border-green-200  rounded-xl shadow-xl pb-13">
     @if (!empty($accesorios->id))
         <div class="pl-4 pr-4 text-xl font-bold mx-auto flex mt-8 text-green-800 font-mono uppercase pb-4">
             <div class=" w-1/3  px-2 ">
@@ -70,11 +70,11 @@
         </div>
 
 @else
-<div class="pl-12 text-xl font-bold  mt-8 mb-10 text-green-500 font-mono uppercase w-96 pb-4">
+<div class="pl-12 text-xl font-bold  mt-8 mb-6 text-green-500 font-mono uppercase w-96 pb-4">
     <div class="">
         <label for="nombre" class="p-4">Nombre:</label>
         <div class=" ">
-            <input class="form-control" placeholder="Bicicleta Giant" required="required" name="nombre" type="text"
+            <input class="form-control" placeholder="Accesorio" required="required" name="nombre" type="text"
                 id="nombre">
         </div>
     </div>
@@ -82,28 +82,28 @@
     <div class="form-group">
         <label for="precio" class="p-4">Precio:</label>
         <div>
-            <input class="form-control" placeholder="2500.00" required="required" name="precio" type="text" id="precio">
+            <input class="form-control" placeholder="2500.00" required="required" name="precio" type="number" id="precio">
         </div>
     </div>
 
     <div class="form-group">
         <label for="stock" class="p-4">Stock:</label>
         <div>
-            <input class="form-control" placeholder="35" required="required" name="stock" type="text" id="stock">
+            <input class="form-control" placeholder="35" required="required" name="stock" type="number" id="stock">
         </div>
     </div>
 
     <div class="form-group">
         <label for="img" class="p-4 ">Selecciona una imagen:</label>
         <div>
-            <input name="img[]" type="file" id="img" multiple="multiple">
+            <input name="img[]" type="file" id="img"required="required" multiple="multiple">
         </div>
     </div>
 </div>
 
 @endif
 
-<div class="ml-12">
+<div class="ml-12 mb-2">
     <button class="p-8 bg-green-600 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-green-800"
         type="submit ">Guardar</button>
     <a href="{{ route('admin/accesorios') }}"

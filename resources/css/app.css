@@ -13,7 +13,11 @@
     display: inline-flex !important;
   }
   .form-label {
-    @apply block text-gray-700 text-xs font-bold uppercase;
+    @apply block text-gray-800 text-base tracking-wider w-full font-bold sm:uppercase font-mono ;
+
+  }
+  .form-head {
+    @apply  text-gray-800 text-base tracking-wider w-full font-bold uppercase font-mono ;
 
   }
   .form-control {

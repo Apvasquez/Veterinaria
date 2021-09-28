@@ -1,12 +1,12 @@
 <x-slot name="header">
     <h2 class="font-semibold mt-4 text-xl text-gray-800 leading-tight">
-        {{ __('role') }}
+        {{ __('permission') }}
     </h2>
 </x-slot>
 
 <div class="m-4  pt-2">
     <div class="mt-10 mb-4">
-        <h1 class="text-center text-white text-4xl  sm:text-5xl tracking-wider uppercase font-semibold">AGREGAR ROL </h1>
+        <h1 class="text-center text-white text-4xl  sm:text-4xl tracking-wider uppercase font-semibold">AGREGAR PERMISOS </h1>
     </div>
 
     <div class="bg-white rounded-lg shadow overflow-hidden max-w-4xl mx-auto  p-4 mb-6 ">
@@ -72,15 +72,15 @@
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200 items-center mx-auto w-full">
-                @foreach ($roles as $role)
+                @foreach ($permissions as $permission)
                     <tr class="text-sm text-gray-500 text-center  ">
-                        <td class="px-4 py-4">{{ $role->id }}</td>
-                        <td class="px-4 py-4">{{ $role->name }}</td>
-                        <td class="px-4 py-4">{{ $role->description }}</td>
+                        <td class="px-4 py-4">{{ $permission->id }}</td>
+                        <td class="px-4 py-4">{{ $permission->name }}</td>
+                        <td class="px-4 py-4">{{ $permission->description }}</td>
                         <td class="px-4 py-4">
-                            <button wire:click="edit({{ $role }})"
+                            <button wire:click="edit({{ $permission }})"
                                 class="bg-blue-600 mb-2 hover:bg-blue-700 text-white rounded  font-bold px-4 py-2">Editar</button>
-                            <button wire:click="destroy({{ $role }})"
+                            <button wire:click="destroy({{ $permission }})"
                                 class="bg-red-500 hover:bg-red-700 text-white rounded font-bold sm:px-1 px-2 py-2">Eliminar</button>
 
                         </td>

@@ -34,4 +34,7 @@ return [
         //Features::teams(),
     ],
 
+    'profile_photo_disk' => 'public',
+
+
 ];

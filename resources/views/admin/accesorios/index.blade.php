@@ -1,6 +1,6 @@
 <x-app-layout>
     @if (Session::has('message'))
-        <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+        <div class="bg-teal-100 border-t-4 m-10 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
             <div class="flex">
                 <div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -13,15 +13,16 @@
             </div>
         </div>
     @endif
+    <div class="mt-16 mb-2">
+        <h1 class="text-center text-4xl sm:text-5xl tracking-wider uppercase font-semibold">Pet Shop</h1>
 
-    <div class="min-h-screen bg-gray-100">
+    </div>
+    <div class="ml-20">
+        <a href="{{ route('admin/accesorios/crear') }}"
+            class="bg-purple-600 py-2 px-5 sm:py-4 sm:px-8 text-white font-bold uppercase text-xs rounded hover:bg-purple-800">Agregar</a>
+    </div>
 
-        <div class="ml-20 pd-8 ">
-            <a href="{{ route('admin/accesorios/crear') }}"
-                class="bg-purple-600 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-purple-800">Agregar</a>
-        </div>
-
-
+    <div class="min-h-screen mt-6 p-3 m-2 bg-purple-50 shadow-2xl rounded-2xl">
 
         <div class="mx-12 my-6">
             <div
@@ -29,7 +30,7 @@
                 @foreach ($accesorios as $accesorio)
 
                     <div class="  pb-2  bg-white rounded   shadow-xl ">
-                        <a class="block w-64 h-48 rounded shadow overflow-hidden">
+                        <a class="block  sm:w-60 h-48 rounded shadow overflow-hidden">
                             <img alt="ecommerce" class="object-cover object-center  w-full h-full block"
                                 src="../uploads/{{ $accesorio->imagenesaccesorios()->first()->nombre }}">
                         </a>
@@ -54,7 +55,7 @@
 
                                 <a href='{{ route('accesorio.pay', $accesorio) }}'"
                                 href="" type=" button"
-                                    class="bg-teal-700 py-2 px-2 text-white font-bold uppercase text-xs rounded hover:bg-teal-800">Comprar</a>
+                                    class="bg-yellow-600 py-2 px-2 text-white font-bold uppercase text-xs rounded hover:bg-teal-800">Comprar</a>
                                 <a href="{{ route('admin/accesorios/actualizar', $accesorio->id) }}"
                                     class="bg-gray-800 py-2 px-4 text-white font-bold uppercase text-xs rounded hover:bg-gray-900">Editar</a>
 
@@ -63,13 +64,7 @@
 
                             </form>
                         </div>
-
                     </div>
-
-
-
-
-
                 @endforeach
             </div>
 

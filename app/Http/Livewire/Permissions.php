@@ -1,15 +1,11 @@
 <?php
 
 namespace App\Http\Livewire;
-
-use App\Models\User;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
-
 use Livewire\Component;
 
-
-class ControlTotal extends Component
+class Permissions extends Component
 {
     public $name, $guard_name, $role_id;
     protected $rules = [
@@ -27,7 +23,8 @@ class ControlTotal extends Component
     public function render()
     {
         $roles=Role::all();
-        return view('livewire.control-total',compact('roles'));
+        $permissions=Permission::all();
+        return view('livewire.permissions',compact('roles','permissions'));
     }
     public function store()
     {    

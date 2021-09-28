@@ -19,7 +19,6 @@
     @livewire('navigation-dropdown')
 
     <div class="panel-body">
-
         <section class="">
 
             <form class="h-screen mb-32 container mx-auto border-gray-900" style="" method="POST"

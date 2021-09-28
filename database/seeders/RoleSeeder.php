@@ -14,12 +14,17 @@ class RoleSeeder extends Seeder
      */
     public function run()
     {
-      $role1 = Role::create(['name' => 'Admin']) ; //
-      $role2 = Role::create(['name' => 'Cliente']) ; //
-        Permission::create(['name' => 'admin.accesorios.index']);
-        Permission::create(['name' => 'admin.accesorios.edit']);
-        Permission::create(['name' => 'admin.accesorios.destroy']);
-        Permission::create(['name' => 'admin.accesorios.create']);
+      $role1 = Role::create(['name' => 'Admin',
+      'description' => 'Administrador del Sistema'
+      ]) ; //
+      
+      $role2 = Role::create(['name' => 'Cliente',
+      'description' => 'Administrador del Sistema']) ; //
+      
+        // Permission::create(['name' => 'admin.accesorios.index']);
+        // Permission::create(['name' => 'admin.accesorios.edit']);
+        // Permission::create(['name' => 'admin.accesorios.destroy']);
+        // Permission::create(['name' => 'admin.accesorios.create']);
     
     }
 }

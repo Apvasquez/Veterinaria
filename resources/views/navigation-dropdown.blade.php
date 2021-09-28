@@ -19,17 +19,15 @@
                         <x-jet-nav-link href="{{ route('admin/accesorios') }}" :active="request()->routeIs('admin/accesorios')">
                             {{ __('Accesorios') }}
                         </x-jet-nav-link>
-                        <x-jet-nav-link href="{{ route('campuses') }}" :active="request()->routeIs('campuses')">
-                            {{ __('Campuses') }}
-                        </x-jet-nav-link>
+                        
                         <x-jet-nav-link href="{{ route('bars') }}" :active="request()->routeIs('bars')">
                             {{ __('Bars') }}
                         </x-jet-nav-link>
-                        @can('Edit')
+                        
                         <x-jet-nav-link href="{{ route('controls') }}" :active="request()->routeIs('controls')">
                             {{ __('Control Total') }}
                         </x-jet-nav-link>
-                        @endcan
+                        
                     
                     
                 </div>
@@ -156,8 +154,8 @@
             <x-jet-responsive-nav-link href="{{ route('admin/accesorios') }}" :active="request()->routeIs('admin/accesorios')">
                 {{ __('Accesorios') }}
             </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link href="{{ route('campuses') }}" :active="request()->routeIs('campuses')">
-                {{ __('Campuses') }}
+            <x-jet-responsive-nav-link href="{{ route('controls') }}" :active="request()->routeIs('controls')">
+                {{ __('Roles') }}
             </x-jet-nav-link>
             <x-jet-responsive-nav-link href="{{ route('bars') }}" :active="request()->routeIs('bars')">
                 {{ __('Bars') }}
@@ -236,10 +234,10 @@
         @else
             <div class="py-1 border-t border-gray-200">
                 <x-jet-responsive-nav-link href="{{ route('login') }}" :active="request()->routeIs('login')">
-                    Login
+                    Entrar
                 </x-jet-responsive-nav-link>
                 <x-jet-responsive-nav-link href="{{ route('register') }}" :active="request()->routeIs('register')">
-                   Register
+                   Registrar
                 </x-jet-responsive-nav-link>
 
             </div>

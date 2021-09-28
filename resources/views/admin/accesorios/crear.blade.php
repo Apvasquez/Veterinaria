@@ -23,9 +23,9 @@
  
     {{ $message=Session::get('message') }} @include('alerts.request')
  
-    <section class=" ">
+    <section class="m-2 ">
         
-        <form class="pt-6 mb-5 mx-auto  container" method="POST" action="{{ route('admin/accesorios/store') }}" role="form" enctype="multipart/form-data">
+        <form class="pt-6 mb-5 mx-auto container" method="POST" action="{{ route('admin/accesorios/store') }}" role="form" enctype="multipart/form-data">
            
             <input type="hidden" name="_method" value="PUT">
             <input type="hidden" name="_token" value="{{ csrf_token() }}"> 
