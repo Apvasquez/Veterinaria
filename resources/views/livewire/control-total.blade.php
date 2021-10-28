@@ -1,5 +1,5 @@
 <x-slot name="header">
-    <h2 class="font-semibold mt-4 text-xl text-gray-800 leading-tight">
+    <h2 class="font-semibold mt-4 text-xl text-red-800 leading-tight">
         {{ __('role') }}
     </h2>
 </x-slot>
@@ -9,7 +9,7 @@
         <h1 class="text-center text-white text-4xl  sm:text-5xl tracking-wider uppercase font-semibold">AGREGAR ROL </h1>
     </div>
 
-    <div class="bg-white rounded-lg shadow overflow-hidden max-w-4xl mx-auto  p-4 mb-6 ">
+    <div class="bg-white rounded-lg shadow overflow-hidden max-w-4xl mx-auto p-4 mb-6 ">
 
         <div class="text-center">
             <label class="mb-2 block mx-auto  ">

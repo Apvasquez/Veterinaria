@@ -19,7 +19,7 @@ class RoleSeeder extends Seeder
       ]) ; //
       
       $role2 = Role::create(['name' => 'Cliente',
-      'description' => 'Administrador del Sistema']) ; //
+      'description' => 'Cliente']) ; //
       
         // Permission::create(['name' => 'admin.accesorios.index']);
         // Permission::create(['name' => 'admin.accesorios.edit']);
